@@ -7,4 +7,5 @@ app_name = 'api'
 urlpatterns = [
     path('', PostList.as_view(), name='listcreate'),
     path('<int:pk>/', PostDetail.as_view(), name='detailcreate'),
+    # path('', SimpleView.as_view(), name='detailcreate'),
 ]
