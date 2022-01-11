@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'app_core.apps.AppCoreConfig',
     'api.apps.ApiConfig',
     'rest_framework',
-    'debug_toolbar',
     'corsheaders',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -164,3 +164,8 @@ CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv())
 #     "x-csrftoken",
 #     "x-requested-with",
 # ]
+
+
+DEBUG_TOOLBAR_CONFIG = {
+    "INTERCEPT_REDIRECTS": False,
+}
